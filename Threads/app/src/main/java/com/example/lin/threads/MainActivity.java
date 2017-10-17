@@ -1,5 +1,6 @@
 package com.example.lin.threads;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             switch(msg.what) {
                 case UPDATE_TEXT:
                     text.setText("nice to meet you");
+                    Intent intent = new Intent();
+                    intent.setAction("android.intent.action.MYSERVICE");
+                    startService(intent);
                     break;
                 default:
                     break;
