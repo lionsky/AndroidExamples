@@ -15,6 +15,7 @@ import static android.content.ContentValues.TAG;
  * helper methods.
  */
 public class MyIntentService extends IntentService {
+    private static final String TAG = "MyIntentService";
     // TODO: Rename actions, choose action names that describe tasks that this
     // IntentService can perform, e.g. ACTION_FETCH_NEW_ITEMS
     private static final String ACTION_FOO = "com.example.lin.servicetest.action.FOO";
